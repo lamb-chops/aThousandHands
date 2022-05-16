@@ -1,0 +1,7 @@
+/* Ended up doing most css through scenebuilder, it was just more quick and less tedious. */
+
+#back {
+	-fx-background-image: url("/home/david/Desktop/apps/inc950-lab5/data/background.jpg");
+	-fx-background-position: center center;
+	-fx-background-size: 500 500;
+}

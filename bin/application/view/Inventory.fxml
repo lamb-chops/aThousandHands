@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.InventoryController">
+   <children>
+      <ImageView blendMode="SRC_ATOP" fitHeight="600.0" fitWidth="600.0" opacity="0.25" pickOnBounds="true">
+         <image>
+            <Image url="@../../../data/background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="home" contentDisplay="TOP" ellipsisString="" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="75.0" prefWidth="73.0" text="Home" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="75.0" fitWidth="75.0">
+               <image>
+                  <Image url="@../../../data/logo.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextArea fx:id="item" layoutX="14.0" layoutY="265.0" prefHeight="110.0" prefWidth="213.0" />
+      <Button fx:id="find" contentDisplay="TOP" ellipsisString="" layoutX="241.0" layoutY="265.0" mnemonicParsing="false" onAction="#find" prefHeight="75.0" prefWidth="72.0" text="Search" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="81.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/find.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="label" layoutX="116.0" layoutY="31.0" prefHeight="55.0" prefWidth="468.0" text="Looking for something specific? Here is your chance to browse or search our items!" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextArea fx:id="output" layoutX="361.0" layoutY="172.0" prefHeight="287.0" prefWidth="223.0" wrapText="true" />
+      <ImageView fitHeight="114.0" fitWidth="600.0" layoutY="486.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../../data/bottom.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.NeedGiveController">
+   <children>
+      <ImageView blendMode="SRC_ATOP" fitHeight="600.0" fitWidth="600.0" opacity="0.25" pickOnBounds="true">
+         <image>
+            <Image url="@../../../data/background.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="id" layoutX="147.0" layoutY="147.0" prefHeight="110.0" prefWidth="213.0" />
+      <TextArea fx:id="item" layoutX="147.0" layoutY="300.0" prefHeight="110.0" prefWidth="213.0" />
+      <TextArea fx:id="number" layoutX="147.0" layoutY="462.0" prefHeight="110.0" prefWidth="213.0" />
+      <Label fx:id="label" layoutX="119.0" layoutY="29.0" prefHeight="55.0" prefWidth="395.0" text="Welcome to the Donation Station!">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="user" contentDisplay="TOP" ellipsisString="" layoutX="15.0" layoutY="147.0" mnemonicParsing="false" prefHeight="110.0" prefWidth="118.0" text="Add User" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <image>
+                  <Image url="@../../../data/user.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="desc" contentDisplay="TOP" ellipsisString="" layoutX="15.0" layoutY="300.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Lookup Item" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <image>
+                  <Image url="@../../../data/cart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="amount" contentDisplay="TOP" ellipsisString="" layoutX="15.0" layoutY="462.0" mnemonicParsing="false" prefHeight="110.0" prefWidth="118.0" text="Show Amount" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <image>
+                  <Image url="@../../../data/question.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="submit" ellipsisString="" layoutX="427.0" layoutY="99.0" mnemonicParsing="false" onAction="#submit" prefHeight="55.0" prefWidth="93.0">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="117.0">
+               <image>
+                  <Image url="@../../../data/submit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="home" contentDisplay="TOP" ellipsisString="" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="70.0" prefWidth="89.0" text="Home" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="75.0" fitWidth="75.0">
+               <image>
+                  <Image url="@../../../data/logo.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <RadioButton fx:id="donate" layoutX="442.0" layoutY="162.0" mnemonicParsing="false" onAction="#handle" text="Donating" />
+      <RadioButton fx:id="recieve" layoutX="442.0" layoutY="193.0" mnemonicParsing="false" onAction="#handle" text="Recieving" />
+      <TextArea fx:id="output" layoutX="384.0" layoutY="257.0" prefHeight="205.0" prefWidth="200.0" wrapText="true" />
+   </children>
+</AnchorPane>

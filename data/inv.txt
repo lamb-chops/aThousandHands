@@ -1,0 +1,4 @@
+tp, 1
+pizza, 3
+condoms, 16
+sdfs, 7

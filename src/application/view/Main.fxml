@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="back" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <ImageView blendMode="SRC_ATOP" fitHeight="600.0" fitWidth="600.0" opacity="0.25" pickOnBounds="true">
+         <image>
+            <Image url="@../../../data/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="72.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../data/logo.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="95.0" layoutY="32.0" prefHeight="46.0" prefWidth="479.0" text="A Thousand Hands: A place to recieve or donate aid today!">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button fx:id="give" contentDisplay="TOP" layoutY="346.0" onMouseClicked="#give" prefHeight="121.0" prefWidth="188.0" text="Those who Give" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+		    <graphic>
+      		        <ImageView fitHeight="111.0" fitWidth="172.0">
+      					<image>
+      		            	<Image url="@../../../data/donate.jpg" />
+      					</image>
+      		        </ImageView>
+		    </graphic>
+		</Button>
+      <Button fx:id="need" alignment="CENTER" contentDisplay="TOP" ellipsisString="" layoutX="407.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#need" prefHeight="120.0" prefWidth="173.0" text="Those in Need" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+      	<graphic>
+      		        <ImageView fitHeight="111.0" fitWidth="172.0">
+      					<image>
+      		            	<Image url="@../../../data/help.jpg" />
+      					</image>
+      		        </ImageView>
+		    </graphic>
+		</Button>
+      <Button fx:id="inv" contentDisplay="TOP" ellipsisString="" layoutX="204.0" layoutY="181.0" mnemonicParsing="false" onMouseClicked="#inv" prefHeight="107.0" prefWidth="171.0" text="Inventory" wrapText="true">
+      	<graphic>
+      		        <ImageView fitHeight="111.0" fitWidth="172.0">
+      					<image>
+      		            	<Image url="@../../../data/inventory.png" />
+      					</image>
+      		        </ImageView>
+		    </graphic>
+		</Button>
+      <ImageView fitHeight="165.0" fitWidth="217.0" layoutX="190.0" layoutY="321.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../data/mainhands.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="114.0" fitWidth="600.0" layoutY="486.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../../data/bottom.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
